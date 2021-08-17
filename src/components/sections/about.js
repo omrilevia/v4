@@ -22,6 +22,7 @@ const StyledText = styled.div`
   ul.skills-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-gap: 0 10px;
     padding: 0;
     margin: 20px 0 0 0;
     overflow: hidden;
@@ -125,7 +126,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'React', 'Eleventy', 'Vue', 'Node.js', 'WordPress'];
+  const skills = ['JavaSE', 'Python', 'C/C++', 'AWS', 'Google Compute Engine', 'KVM'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,21 +136,17 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              My name is Omri Levia and I enjoy writing networking applications and building
+              distributed systems. I am set to graduate from San Jose State University with an MS in
+              Software Engineering in December 2021. I received my BS in Physics at the University
+              of California, San Diego in 2018.
             </p>
 
             <p>
-              Fast-forward to today, and I've had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              I love learning new things and exploring new technologies. I'm grateful for my time at{' '}
+              <a href="https://waymo.com//">Alphabet, Waymo</a> and interning at{' '}
+              <a href="https://www.vocera.com/">Vocera Communications</a> for teaching me new skills
+              and pushing me out of my comfort zone.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>
@@ -164,7 +161,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/me.png"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
